@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* размеры ширины и высоты включают в себя padding */
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header*/
+summary {
+    display: list-item;
+    background: #EEEFF1;
+}
+ul {
+    margin: 0;
+    padding: 0;
+} 
+li {
+    list-style: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+button {
+    padding: 25px 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #34547a;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+button:hover, button:focus {
+    background-color: #6683a5;
+}
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 0;
+}
+.title {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+.container_header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 0;
+}
+.header_item:not(:last-child) {
+    margin-right: 40px;
+}
+.header_item:hover, .header_item:focus, .header_logo:hover ,.header_logo:focus {
+    color: #6683a5;
+}
+.header_logo {
+    color: #34547a;
+    font-family: 'Revalia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+}
+.header_list {
+    display: flex;
+    margin: auto;
+    font-weight: 500;
+    color: #34547a;
+}
+.container_hero {
+    display: flex;
+    justify-content: space-between;
+}
+.hero_info {
+    width: 50%;
+}
+.hero_description {
+    margin-bottom: 60px;
+}
+.hero_img {
+    margin: auto;
+}
+.container_about {
+    text-align: center;
+}
+.projects,
+.footer {
+    background-color: #34547a;
+    color: #ffffff;
+}
+.projects_list,
+.container_footer {
+    display: flex;
+    justify-content: space-between;
+}
+.projects_item {
+    display: flex;
+}
+.projects_item-img {
+    margin-right: 20px;
+}
+.projects_number {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+/* мои навыки */
+.skills {
+    padding: 100px 0;
+}
+.skills-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-info {
+    width: 40%;
+}
+.skills-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.skill-scale:not(:last-child) {
+    margin-bottom: 30px;
+}
+.skill-name {
+    color: #727272;
+    margin-bottom: 20px;
+}
+.skill-scale-outer {
+    height: 4px;
+    background-color: #C4C4C4;
+}
+.skill-scale-inner {
+    width: 70%;
+    height: 100%;
+    background-color: #34547A;
+}
+.skills-img {
+    display: block; /* картинка - не блочный элемент */
+    width: 50%;
+}
+
+/* Как я работаю */
+.process {
+    padding: 100px 0;
+    background-color: #EEEFF1;
+}
+.process-title {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+.process-descr {
+    width: 50%;
+    margin: 50px auto 60px; /* top right-left bottom */
+    color: #727272;
+    text-align: center;
+}
+.process-video {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/* Проекты */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-item {
+    width: 25%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+}
+.sticker {
+    background-image: url(./images/image1.png);
+}
+.laptop {
+    background-image: url(./images/image4.png);
+}
+.projects-item-inner {
+    height: 100%; /* на всю высоту внешнего блока */
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+    opacity: 0; /* прозрачность блока. 0 - прозрачный(невидимый) 1-непрозрачный. 0.5 прозрачный наполовину */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects-item-inner:hover {
+    opacity: 1;
+}
+
+/* Микрософт */
+.microsoft-icon {
+    height: 350px;
+}
+.icon {
+    display: flex;
+    padding: 115px 405px;
+    margin: auto;
+    justify-content: space-evenly; 
+}
+
+/* Форма */
+.form {
+    background-color: #EEEFF1;
+    padding: 100px 0;
+}
+.form-wrapper {
+    width: 30%;
+    margin: auto;
+}
+.form-title {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+.form-descr {
+    color: #727272;
+    margin: 50px 0 65px;
+    text-align: center;
+    line-height: 26px;
+}
+.form-control {
+    display: flex;
+    justify-content: space-between;
+}
+input[name="name"], input[name="email"] {
+    width: 45%;
+    padding: 20px;
+    border: none; /* убираем границы элемента (input) */
+    outline: none; /* убираем границы, которые появляются при фокусе */
+}
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    margin: 20px 0 50px;
+    font-family: 'Roboto', sans-serif;
+}
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    padding: 20px 45px;
+    background-color: #34547A;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase; /* буквы в верхнем регистре */
+}
+
+/* Footer  */
+footer {
+    height: 150px;
+    background: #34547A;
+}
+p {
+    color: #FFFFFF;
+    padding: 50px;
+    margin-left: 406px;
+}
+.svg {
+    display: block;
+    padding: 55px 390px 55px 1356px;
+}
+
+/* 
+    border: 1px solid black.
+    border: толщина стиль цвет;
+*/
